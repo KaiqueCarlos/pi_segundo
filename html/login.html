@@ -1,0 +1,107 @@
+<!doctype html>
+<html lang="en">
+
+<head>
+    <meta charset="utf-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1">
+    <title>Bootstrap demo</title>
+    <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.2/dist/css/bootstrap.min.css" rel="stylesheet"
+        integrity="sha384-T3c6CoIi6uLrA9TneNEoa7RxnatzjcDSCmG1MXxSR1GAsXEV/Dwwykc2MPK8M2HN" crossorigin="anonymous">
+    <link rel="stylesheet" href="/css/style.css">
+</head>
+
+<body>
+
+    <div class="cabeçalho">
+        <img class="logo" src="/img/logo.png">
+
+        <nav>
+            <a href="#">home</a>
+            <a href="#">fale conosco</a>
+            <a href="#">notícias</a>
+            <a href="#">nossa equipe</a>
+        </nav>
+    </div>
+
+    <div class="user"></div>
+    <img class="divsup" src="/img/logo.png"></img>
+    <div class="cadastrocli">
+        <p>E-mail</p>
+        <input type="text">
+        <div class="Senha">
+            <p>Senha</p>
+        </div>
+        <input type="text">
+    </div>
+    <a class="enter" href="entrar">Entrar</a>
+    </div>
+    <div class="imagemdireita"></div>
+    <a class="crie_conta" data-bs-toggle="modal" data-bs-target="#RegistroModal">Ainda não tem conta? Crie uma agora</a>
+
+
+
+    <!-- Modal -->
+    <div class="modal fade" id="RegistroModal" tabindex="-1" aria-labelledby="RegistroModalLabel" aria-hidden="true">
+        <div class="modal-dialog modal-lg">
+            <div class="modal-content">
+                <div class="modal-header">
+                    <h1 class="modal-title fs-5" id="RegistroModalLabel">Registro</h1>
+                    <button type="button" class="btn-close" data-bs-dismiss="modal" aria-label="Close"></button>
+                </div>
+                <div class="modal-body">
+                    <div class="row">
+                        <div class="col-md-6">
+                            <div class="form-grup">
+                                <label for="">Nome</label>
+                                <input id="txtNome" type="text" class="form-control" placeholder="digite seu nome...">
+                            </div>
+                        </div>
+                        <div class="col-md-6">
+                            <div class="form-grup">
+                                <label for="">Sobrenome</label>
+                                <input id="txtSobrenome" type="text" class="form-control" placeholder="digite seu nome...">
+                            </div>
+                        </div>       
+                    </div>
+                    <div class="row">
+                        <div class="col-md-6">
+                            <div class="form-grup">
+                                <label for="">Email</label>
+                                <input id="txtEmail" type="text" class="form-control" placeholder="digite seu e-mail...">
+                            </div>
+                        </div>
+                        <div class="col-md-6">
+                            <div class="form-grup">
+                                <label for="">Senha</label>
+                                <input id="txtSenha" type="password" class="form-control"
+                                    placeholder="crie uma senha...">
+                            </div>
+                        </div>
+                        <div class="col-md-6">
+                            <div class="form-grup">
+                                <label for="">Endereço</label>
+                                <input id="txtEnderco" type="text" class="form-control" placeholder="digite seu endereço...">
+                            </div>
+                        </div>
+                        <div class="col-md-6">
+                            <div class="form-grup">
+                                <label for="">Telefone</label>
+                                <input id="txtTelefone" type="number" class="form-control" placeholder="digite seu telefone...">
+                            </div>
+                        </div>
+                    </div>
+                </div>
+                <div class="modal-footer">
+                    <button type="button" class="btn btn-secondary" data-bs-dismiss="modal">Fechar</button>
+                    <button type="button" class="btn btn-primary">Salvar</button>
+                </div>
+            </div>
+        </div>
+    </div>
+
+    <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.2/dist/js/bootstrap.bundle.min.js"
+        integrity="sha384-C6RzsynM9kWDrMNeT87bh95OGNyZPhcTNXj1NW7RuBCsyN/o0jlpcV8Qyq46cDfL"
+        crossorigin="anonymous"></script>
+</body>
+
+</html>
